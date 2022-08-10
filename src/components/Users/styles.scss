@@ -1,9 +1,10 @@
+@import 'src/styles/_mixins_.scss';
+
 ul {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 24px;
+
+    @include display-flex($flex-wrap: wrap, $justify-content: center, $gap: 24px);
+
     max-width: 1280px;
   
     margin: 0;

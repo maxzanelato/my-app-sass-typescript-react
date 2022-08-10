@@ -1,0 +1,16 @@
+
+@mixin full-width {
+    width: 100%;
+}
+
+@mixin display-flex($flex-direction: row, $gap: 0, $justify-content: initial, $align-items: initial, $flex-wrap: initial) {
+    display: flex;
+
+    align-items: $align-items;
+    justify-content: $justify-content;
+    flex-direction: $flex-direction;
+
+    gap: $gap;
+
+    flex-wrap: $flex-wrap;
+}

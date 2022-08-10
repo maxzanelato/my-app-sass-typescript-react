@@ -1,13 +1,16 @@
+@import 'src/styles/_mixins_.scss';
+
 form {
-    display: flex;
-    gap: 10px;
+    @include full-width;
+
+    @include display-flex($gap: 10px);
   
     max-width: 1200px;
-    width: 100%;
   
     input {
+      @include full-width;
+
       height: 56px;
-      width: 100%;
   
       border: none;
       border-radius: 10px;
